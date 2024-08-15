@@ -17,3 +17,7 @@ Route::get('/todo-list', function () {
 Route::get('/cascanding-dropdown', function () {
 	return view('cascanding-dropdown');
 })->name('cascanding-dropdown');
+
+Route::get('/product-search', function () {
+	return view('product-search');
+})->name('product-search');
