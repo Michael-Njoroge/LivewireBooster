@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>LiveWireBooster</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -18,7 +18,7 @@
         <livewire:styles/>
     </head>
     <body class="antialiased">
-        <nav class="flex bg-slate-700 text-white">
+        <nav class="flex bg-slate-700 text-white items-center justify-center">
             <a href="/counter" class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('counter')) ? 'bg-slate-800' : ''}}">Counter</a>
             <a href="/calculator" class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('calculator')) ? 'bg-slate-800' : ''}}">Calculator</a>
             <a href="/todo-list" class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('todo-list')) ? 'bg-slate-800' : ''}}">Todo List</a>
