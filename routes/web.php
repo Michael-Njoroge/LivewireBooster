@@ -13,3 +13,7 @@ Route::get('/calculator', function () {
 Route::get('/todo-list', function () {
 	return view('todo-list');
 })->name('todo-list');
+
+Route::get('/cascanding-dropdown', function () {
+	return view('cascanding-dropdown');
+})->name('cascanding-dropdown');

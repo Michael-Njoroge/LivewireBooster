@@ -22,6 +22,7 @@
             <a href="/counter" class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('counter')) ? 'bg-slate-800' : ''}}">Counter</a>
             <a href="/calculator" class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('calculator')) ? 'bg-slate-800' : ''}}">Calculator</a>
             <a href="/todo-list" class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('todo-list')) ? 'bg-slate-800' : ''}}">Todo List</a>
+             <a href="/cascanding-dropdown" class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('cascanding-dropdown')) ? 'bg-slate-800' : ''}}">Cascanding Dropdown</a>
         </nav>
         {{$slot}}
         <livewire:scripts/>

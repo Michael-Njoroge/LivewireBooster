@@ -2,22 +2,29 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Continent;
+use App\Models\Countries;
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
-{
-    /**
-     * Seed the application's database.
-     */
-    public function run(): void
-    {
-        // User::factory(10)->create();
+class DatabaseSeeder extends Seeder {
+	/**
+	 * Seed the application's database.
+	 */
+	public function run(): void {
+		$continents = [
+			['name' => 'Africa'],
+			['name' => 'Asia'],
+			['name' => 'Europe'],
+			['name' => 'North America'],
+			['name' => 'South America'],
+			['name' => 'Australia'],
+			['name' => 'Antarctica'],
+		];
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
-    }
+		foreach ($continents as $continent) {
+			$createdContinent = Continent::create($continent);
+			$createdContinent->countries()->saveMany(Countries::factory(10)->make());
+		}
+	}
 }
