@@ -17,7 +17,12 @@
         @vite(['resources/css/app.css','resources/css/app.js'])
         <livewire:styles/>
     </head>
-    <body class="font-sans antialiased dark:bg-black dark:text-white/50">
+    <body class="antialiased">
+        <nav class="flex bg-slate-700 text-white">
+            <a href="/counter" class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('counter')) ? 'bg-slate-800' : ''}}">Counter</a>
+            <a href="/calculator" class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('calculator')) ? 'bg-slate-800' : ''}}">Calculator</a>
+            <a href="/todo-list" class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('todo-list')) ? 'bg-slate-800' : ''}}">Todo List</a>
+        </nav>
         {{$slot}}
         <livewire:scripts/>
     </body>
