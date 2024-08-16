@@ -25,3 +25,7 @@ Route::get('/product-search', function () {
 Route::get('/image-upload', function () {
 	return view('image-upload');
 })->name('image-upload');
+
+Route::get('/register-form', function () {
+	return view('register-form');
+})->name('register-form');

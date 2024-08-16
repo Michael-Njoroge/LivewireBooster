@@ -31,3 +31,6 @@ Below is a screenshots of the project:
 ![Screenshot4](public/screenshots/screenshot4.png)
 ![Screenshot5](public/screenshots/screenshot5.png)
 ![Screenshot8](public/screenshots/screenshot8.png)
+![Screenshot10](public/screenshots/screenshot10.png)
+![Screenshot11](public/screenshots/screenshot11.png)
+![Screenshot9](public/screenshots/screenshot9.png)

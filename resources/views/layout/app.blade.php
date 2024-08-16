@@ -25,6 +25,7 @@
             <a href="/cascanding-dropdown" wire:navigate class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('cascanding-dropdown')) ? 'bg-slate-800' : ''}}">Cascanding Dropdown</a>
             <a href="/product-search" wire:navigate class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('product-search')) ? 'bg-slate-800' : ''}}">Product Search</a>
             <a href="/image-upload" wire:navigate class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('image-upload')) ? 'bg-slate-800' : ''}}">Image Upload</a>
+            <a href="/register-form" wire:navigate class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('register-form')) ? 'bg-slate-800' : ''}}">Registration Form</a>
         </nav>
         {{$slot}}
         <livewire:scripts/>
