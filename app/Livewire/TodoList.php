@@ -7,6 +7,7 @@ use Livewire\Component;
 
 class TodoList extends Component {
 	public $todos;
+
 	public string $todoText = '';
 
 	public function mount() {

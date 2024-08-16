@@ -21,3 +21,7 @@ Route::get('/cascanding-dropdown', function () {
 Route::get('/product-search', function () {
 	return view('product-search');
 })->name('product-search');
+
+Route::get('/image-upload', function () {
+	return view('image-upload');
+})->name('image-upload');

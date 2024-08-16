@@ -19,11 +19,12 @@
     </head>
     <body class="antialiased">
         <nav class="flex bg-slate-700 text-white items-center justify-center">
-            <a href="/counter" class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('counter')) ? 'bg-slate-800' : ''}}">Counter</a>
-            <a href="/calculator" class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('calculator')) ? 'bg-slate-800' : ''}}">Calculator</a>
-            <a href="/todo-list" class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('todo-list')) ? 'bg-slate-800' : ''}}">Todo List</a>
-            <a href="/cascanding-dropdown" class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('cascanding-dropdown')) ? 'bg-slate-800' : ''}}">Cascanding Dropdown</a>
-            <a href="/product-search" class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('product-search')) ? 'bg-slate-800' : ''}}">Product Search</a>
+            <a href="/counter" wire:navigate class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('counter')) ? 'bg-slate-800' : ''}}">Counter</a>
+            <a href="/calculator" wire:navigate class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('calculator')) ? 'bg-slate-800' : ''}}">Calculator</a>
+            <a href="/todo-list" wire:navigate class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('todo-list')) ? 'bg-slate-800' : ''}}">Todo List</a>
+            <a href="/cascanding-dropdown" wire:navigate class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('cascanding-dropdown')) ? 'bg-slate-800' : ''}}">Cascanding Dropdown</a>
+            <a href="/product-search" wire:navigate class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('product-search')) ? 'bg-slate-800' : ''}}">Product Search</a>
+            <a href="/image-upload" wire:navigate class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('image-upload')) ? 'bg-slate-800' : ''}}">Image Upload</a>
         </nav>
         {{$slot}}
         <livewire:scripts/>
