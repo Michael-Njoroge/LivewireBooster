@@ -25,9 +25,9 @@ A user registration form with validation, authentication, and email verification
 ## Screenshots
 Below is a screenshots of the project:
 
-![Screenshot1](screenshots/screenshot1.png)
-![Screenshot2](screenshots/screenshot2.png)
-![Screenshot3](screenshots/screenshot3.png)
-![Screenshot4](screenshots/screenshot4.png)
-![Screenshot5](screenshots/screenshot5.png)
-![Screenshot8](screenshots/screenshot8.png)
+![Screenshot1](public/screenshots/screenshot1.png)
+![Screenshot2](public/screenshots/screenshot2.png)
+![Screenshot3](public/screenshots/screenshot3.png)
+![Screenshot4](public/screenshots/screenshot4.png)
+![Screenshot5](public/screenshots/screenshot5.png)
+![Screenshot8](public/screenshots/screenshot8.png)

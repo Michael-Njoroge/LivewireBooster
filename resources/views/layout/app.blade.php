@@ -19,7 +19,7 @@
     </head>
     <body class="antialiased">
         <nav class="flex bg-slate-700 text-white items-center justify-center">
-            <a href="/counter" wire:navigate class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('counter')) ? 'bg-slate-800' : ''}}">Counter</a>
+            <a href="/" wire:navigate class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('counter')) ? 'bg-slate-800' : ''}}">Counter</a>
             <a href="/calculator" wire:navigate class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('calculator')) ? 'bg-slate-800' : ''}}">Calculator</a>
             <a href="/todo-list" wire:navigate class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('todo-list')) ? 'bg-slate-800' : ''}}">Todo List</a>
             <a href="/cascanding-dropdown" wire:navigate class="py-4 px-6 hover:bg-slate-800 {{(request()->routeIs('cascanding-dropdown')) ? 'bg-slate-800' : ''}}">Cascanding Dropdown</a>
